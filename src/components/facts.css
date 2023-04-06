@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+}
+
+.facts{
+    width: 100%;
+}
+
+.facts h1{
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: orange;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.facts p{
+    font-size: 1.5rem;
+    font-weight: 300;
+  
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+.facts .btn{
+    background-color: orange;
+    color: black;
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    margin: 5px;
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.387);
+
+}
+
+.facts .btn:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}

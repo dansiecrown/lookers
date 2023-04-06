@@ -1,0 +1,152 @@
+.App{
+  
+  background-image: url("./images/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  color: #fff;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  text-align: center;
+}
+
+
+
+.lightMode{
+  background-image: url("./images/whitebg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(42, 42, 42);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  text-align: center;
+}
+
+.header {
+  width: 100%;
+  text-align: center;
+  padding: 40px; 
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header h1{
+  letter-spacing: 2px;
+  font-size: 3em;
+}
+.header *{
+  margin:auto 0;
+
+}
+
+.header button{
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+}
+
+.header button:hover{
+  cursor: pointer;
+
+}
+
+.fa-sun{
+  color: #fff;
+  font-size: 2em;
+}
+
+
+
+.container{
+  width: 100%;
+  margin: auto;
+}
+
+.outlet{
+  min-width: 70%;
+  max-width: 70%;
+  margin: auto;
+  padding: 40px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.171);
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.loutlet{
+  min-width: 70%;
+  max-width: 70%;
+  margin: auto;
+  padding: 40px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.171);
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+  box-shadow: 5px 10px 10px rgba(2, 24, 44, 0.144);
+}
+
+.footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+ 
+  background-color: rgba(3, 17, 38, 0.63);
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.viewChange{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  gap: 20px;
+}
+
+.viewChange button{
+  padding: 10px 20px;
+  border: 0;
+  outline: 0;
+  background: rgba(0, 0, 0, 0.715);
+  color: white;
+  transition: all 0.3s;
+  border-radius: 50px;
+  margin-top: 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.387);
+}
+
+.viewChange button:hover{
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.viewChange .active {
+  background: rgba(255, 255, 255, 0.553);
+  color: black;
+  cursor: pointer;
+}
+
+.viewChange .active:hover {
+  background: rgba(255, 255, 255, 0.553);
+  color: black;
+  cursor: pointer;
+}
+
+@media  screen and (min-width: 1000px) {
+  .outlet, .loutlet{
+    min-width: 30%;
+    max-width: 40%;
+  }
+
+  .header{
+    padding: 40px 100px;
+  }
+}
+  

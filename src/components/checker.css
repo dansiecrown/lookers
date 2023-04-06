@@ -1,0 +1,17 @@
+.checker span{
+    display: inline-block;
+    
+    margin-right: 20px;
+    transition: all 0.3s;
+}
+
+.checker span:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+ 
+    color: orange;
+}
+
+.checker .ip{
+    font-size: 1.5em;
+}
