@@ -1,14 +1,26 @@
+*{
+  box-sizing: border-box;
+}
 .App{
   
   background-image: url("./images/bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-
   color: #fff;
-  height: 100vh;
   width: 100%;
-  display: flex;
+  min-height: 100vh;
   text-align: center;
+  /* padding-top: 200px; */
+}
+
+.dark-a{
+  text-decoration: none;
+  color: rgb(42, 42, 42);
+}
+
+.light-a{
+  text-decoration: none;
+  color: white;
 }
 
 
@@ -18,18 +30,18 @@
   background-repeat: no-repeat;
   background-size: cover;
   color: rgb(42, 42, 42);
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
-  display: flex;
+ 
   text-align: center;
 }
 
 .header {
+  margin-bottom: 100px;
   width: 100%;
   text-align: center;
   padding: 40px; 
-  position: fixed;
-  top: 0;
+  /* position: fixed; */
   display: flex;
   justify-content: space-between;
 }
@@ -54,6 +66,10 @@
 
 }
 
+.header .darkbtn{
+  color: #fff;
+}
+
 .fa-sun{
   color: #fff;
   font-size: 2em;
@@ -66,6 +82,10 @@
   margin: auto;
 }
 
+.Home{
+  margin-bottom: 50px;
+}
+
 .outlet{
   min-width: 70%;
   max-width: 70%;
@@ -76,13 +96,20 @@
 	-webkit-backdrop-filter: blur(10px);
 	backdrop-filter: blur(10px);
   box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
+  
+
 }
 
+.signs{
+  margin-top: 50px;
+  margin-bottom: 100px;
 
+}
 .loutlet{
   min-width: 70%;
   max-width: 70%;
   margin: auto;
+
   padding: 40px;
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.171);
@@ -92,10 +119,10 @@
 }
 
 .footer{
-  position: absolute;
-  bottom: 0;
+
   width: 100%;
- 
+  position: fixed;
+  bottom: 0;
   background-color: rgba(3, 17, 38, 0.63);
   color: white;
   text-align: center;
@@ -105,8 +132,6 @@
 .viewChange{
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-top: 50px;
   gap: 20px;
 }
 
@@ -139,6 +164,8 @@
   cursor: pointer;
 }
 
+
+
 @media  screen and (min-width: 1000px) {
   .outlet, .loutlet{
     min-width: 30%;
@@ -150,3 +177,31 @@
   }
 }
   
+
+@media screen and (max-width: 600px) {
+
+  .header{
+    width: 100%;
+    text-align: center;
+    padding: 10px 30px; 
+    /* position: fixed; */
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header h1{
+    font-size: 2em;
+  }
+
+  .mode{
+    position: fixed;
+ 
+    bottom: 50px;
+    left: 10px;
+    background-color: rgba(255, 166, 0, 0.397);
+    padding: 5px;
+    border-radius: 50%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.387);
+   
+  }
+}

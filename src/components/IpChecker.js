@@ -33,10 +33,10 @@ export default function IpChecker() {
         <div className='checker' >
             {visitorData &&
                 <div>
-                    <span className="ip">{visitorData.ipAddress}
-                    </span>
+                    {/* <span className="ip">{visitorData.ipAddress}
+                    </span> */}
 
-                    <span>{visitorData.countryName}</span>
+                    {/* <span>{visitorData.countryName}</span> */}
                     <span>{visitorData.city}</span>
                     
                     <span>{visitorData.os}</span>

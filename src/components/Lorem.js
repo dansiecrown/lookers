@@ -5,7 +5,7 @@ export default function Lorem({lightMode}) {
 
     // This is a Lorem generator app
     // It generates a random text
-    const [charNum, setCharNum] = useState(300);
+    const [charNum, setCharNum] = useState(30);
     const [text, setText] = useState([]);
     const [loading, setLoading] = useState(true);
     const [copied, setCopied] = useState(false);
